@@ -1,0 +1,54 @@
+p {
+  font-family: Lato;
+  text-decoration: none;
+  margin-left: 150px;
+}
+
+a{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-decoration: none;
+  width: 100px;
+  
+}
+
+.container{
+
+  background-color:#FFD700;
+}
+
+
+
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+  text-decoration: none;
+}
+nav a {
+  
+  padding: 5px 10px;
+  text-decoration: none;
+ 
+  display: inline-block;
+  background-color:#FF4500;
+  border-radius: 40px;
+}
+nav a:visited, a:link {
+  color: white;
+}
+nav a:hover {
+  color: white;
+  background-color: #FF4500;
+}
+nav a.active {
+  color: #FF4500;
+}

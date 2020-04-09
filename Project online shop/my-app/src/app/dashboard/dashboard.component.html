@@ -1,0 +1,46 @@
+<!-- <div class="header">
+<ul class="col">
+  <ul *ngFor="let category of categories" class = "products">
+    <a routerLink="/category/{{category.id}}/products">
+     <h4 class="module">{{category.name}}</h4>
+    </a>
+    <button class="delete" title="delete category"
+      (click)="delete(category)">x</button>
+  </ul>
+</ul>
+</div>
+<div class="products">
+  <div class="product-item" *ngFor="let product of products">
+
+    <h3>
+      <a class = "item" routerLink="/product-id/{{product.id}}" [title]="product.name + ' details'" >
+        {{ product.name }}
+      </a>
+    </h3>
+    <img src="{{product.image}}" width = "200px" class = "image">
+    <br>
+    <h4><span class = "value"> {{ product.price }} </span><span class = "rate"> 
+      <br>rating: {{ product.rating }} </span></h4>
+  </div>
+</div>
+ -->
+
+<div >
+  <label class="name">Category name:
+    <input style="color:#0b172a" #categoryName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add" (click)="add(categoryName.value); categoryName.value=''">
+    add
+  </button>
+</div>
+<ul class="col">
+  <ul *ngFor="let category of categories" class = "products">
+    <a routerLink="/category/{{category.id}}/products">
+     <h4 class="module">{{category.name}}</h4>
+    </a>
+    <button class="delete" title="delete category"
+      (click)="delete(category)">x</button>
+  </ul>
+</ul>
+
